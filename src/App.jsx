@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Cadastro from "./pages/cadastro"
 import Login from "./pages/login"
+import ListarUsuarios from "./pages/lista"
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Cadastro/>}/>
         <Route path="/login" element={<Login/>}/>
+        <Route path="/listar-usuarios" element={<ListarUsuarios/>}/>
       </Routes>
     </BrowserRouter>
   )
