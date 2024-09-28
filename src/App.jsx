@@ -1,10 +1,17 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Cadastro from "./pages/cadastro"
+import Login from "./pages/login"
+
 function App() {
 
 
   return (
-    <>
-      <h1>Cadastro</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Cadastro/>}/>
+        <Route path="/login" element={<Login/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
